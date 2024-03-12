@@ -1,0 +1,25 @@
+@import "./mixins";
+
+.h2 {
+  font-family: var(--header-font);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-400);
+  line-height: 63px;
+}
+
+.h3 {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-400);
+  font-family: var(--header-font);
+}
+
+.text {
+  line-height: 26px;
+}
+
+.btn-text {
+  font-size: var(--font-d-btn);
+  font-weight: var(--fw-900);
+  color: var(--color-light);
+  text-transform: uppercase;
+}

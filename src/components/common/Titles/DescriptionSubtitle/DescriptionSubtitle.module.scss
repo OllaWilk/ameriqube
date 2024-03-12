@@ -1,0 +1,11 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/typography.scss";
+
+.subtitle {
+  font-family: var(--header-font);
+  color: var(--color-dark);
+  font-weight: var(--fw-900);
+  font-size: var(--fs-section-subtitle);
+  line-height: 29px;
+  text-transform: uppercase;
+}

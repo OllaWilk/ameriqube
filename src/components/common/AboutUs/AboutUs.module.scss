@@ -1,0 +1,8 @@
+@import "../../../styles/mixins";
+
+.about {
+  @include flex(column, flex-start, center);
+  overflow: hidden;
+  padding: 90px 0 90px 0;
+  min-height: 80svh;
+}

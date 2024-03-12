@@ -1,0 +1,132 @@
+@import "../../../styles/mixins";
+
+.aboutPage {
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: justify;
+
+  //HEADER
+  .splashBackgroundImg {
+    @include splash;
+    position: relative;
+    min-height: 90svh;
+    @include flex(column, center, center);
+
+    &::before {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .videoWrap {
+      position: absolute;
+      z-index: -99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @include sm-max {
+      height: 100svh;
+    }
+  }
+
+  //OUR PEOPLE
+  .ourPeople {
+    overflow: hidden;
+    padding: 70px 0 90px 0;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+
+    gap: 80px;
+    flex-wrap: wrap;
+    min-height: 100svh;
+    height: 100svh;
+
+    @include md-max {
+      height: auto;
+      grid-auto-flow: row;
+      align-content: space-between;
+    }
+  }
+
+  //TEAM
+  .team {
+    padding: 120px 0 90px 0;
+    background-color: var(--color-grey);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  //OFFERS
+
+  .offers {
+    padding: 120px 0 90px 0;
+
+    .headerTextWrap {
+      h2,
+      h3 {
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: justify;
+        padding: 30px 0 60px 0;
+        width: 70%;
+
+        @include lg-max {
+          width: 100%;
+        }
+      }
+    }
+
+    .offersCart {
+      @include flex(column, center, space-between);
+      gap: 30px;
+    }
+  }
+
+  .location {
+    min-height: 90svh;
+    padding: 120px 0 90px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.callToActionBackground {
+  background-color: var(--color-blue-dark);
+  padding: 100px 0;
+  min-height: 30svh;
+
+  @include lg-max {
+    display: flex;
+    align-items: center;
+  }
+
+  @include md-max {
+    padding: 20px 0;
+    min-height: 40vh;
+  }
+
+  @include sm-max {
+    min-height: 50vh;
+    height: 50vh;
+  }
+}

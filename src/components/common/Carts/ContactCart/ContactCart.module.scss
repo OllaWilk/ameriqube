@@ -1,0 +1,88 @@
+@import "../../../../styles/mixins";
+
+.contactBox {
+  text-align: left;
+  word-wrap: break-word;
+
+  @include lg-max {
+    text-align: center;
+  }
+
+  .subtitle {
+    font-family: var(--header-font);
+    color: var(--color-dark);
+    font-weight: var(--fw-900);
+    font-size: var(--fs-3);
+    text-transform: uppercase;
+    margin: 0 30px 30px 0;
+    word-wrap: break-word;
+
+    @include lg-max {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .cartDescription {
+    margin: 30px 0;
+    width: 100%;
+
+    @include lg-max {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .contactList {
+    @include flex(column, flex-start, space-between);
+    gap: 50px;
+    width: 100%;
+
+    @include lg-max {
+      @include flex(row, center, space-around);
+      flex-wrap: wrap;
+      gap: 20px;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .contactListLtem {
+      @include flex(row, center, flex-start);
+      gap: 18px;
+      border: none;
+      width: 100%;
+
+      @include lg-max {
+        justify-content: space-around;
+        align-items: space-between;
+        padding: 0 20px;
+        border: 1px solid var(--color-main);
+        margin-bottom: 0px;
+        width: 45%;
+        min-height: 150px;
+      }
+
+      @include md-max {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .contactItemIcon {
+        width: 25px;
+        object-fit: cover;
+
+        img {
+          @include img;
+        }
+      }
+
+      .textWrap {
+        text-align: left;
+
+        @include lg-max {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

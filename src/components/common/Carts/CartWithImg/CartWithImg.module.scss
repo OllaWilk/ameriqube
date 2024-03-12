@@ -1,0 +1,55 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/typography";
+
+.porftolioCart {
+  .imgWrap {
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    @include flex(column, flex-start, center);
+
+    img {
+      object-fit: contain;
+      padding-bottom: 20px;
+
+      height: 250px;
+      width: 100%;
+
+      @include sm-max {
+        height: 300px;
+      }
+    }
+  }
+
+  .abstract {
+    @include flex(column, flex-start, space-between);
+    border-radius: 0 0 6px 6px;
+    transition: var(--transition);
+    min-height: 330px;
+    padding: 20px 20px;
+    background-color: var(--color-light);
+
+    @include sm-max {
+      padding: 20px 40px;
+      height: auto;
+    }
+
+    h3 {
+      z-index: 9;
+      text-transform: uppercase;
+      font-family: var(--header-font);
+      letter-spacing: 1px;
+
+      @include md-max {
+        height: auto;
+      }
+    }
+
+    p {
+      font-size: 16px;
+
+      @include sm-max {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

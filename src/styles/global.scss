@@ -1,0 +1,89 @@
+@import "./variable";
+@import "./mixins";
+@import "./normalize";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-light);
+  font-family: var(--text-font);
+  font-size: var(--fs-text);
+  color: var(--color-dark);
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+  overflow: hidden;
+
+  transition: var(--transition);
+  transition-delay: --var(--deley);
+
+  @media screen and (max-width: 1200px) {
+    width: 92%;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: unset;
+    text-decoration: none;
+  }
+}
+
+button {
+  background-color: transparen;
+}
+
+.closed {
+  // transform: translateX(100vw);
+  transform: translateX(100%);
+}
+
+// .open {
+//   transform: translateX(0);
+// }
+
+.active {
+  color: var(--color-main);
+  font-weight: var(--fw-900);
+
+  &:hover {
+    color: var(--color-light);
+  }
+}
+
+.stickySection {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+  background-color: var(--color-light);
+}
+
+.none {
+  display: none;
+}
+
+// TESTS
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}

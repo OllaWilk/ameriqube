@@ -1,0 +1,13 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variable";
+
+.languageLocationWrap {
+  div {
+    color: var(--color-light);
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+}

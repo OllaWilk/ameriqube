@@ -1,0 +1,23 @@
+@import "../../../styles/mixins";
+
+.offer {
+  @include flex(column, center, center);
+  padding: 70px 0 120px 0;
+  overflow: hidden;
+
+  h2 {
+    color: var(--color-light);
+
+    &::after {
+      margin: auto;
+    }
+  }
+
+  .offerCart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 50px;
+    gap: 50px;
+    text-align: justify;
+  }
+}

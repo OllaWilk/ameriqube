@@ -1,0 +1,122 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variable";
+
+.navigation,
+.navigationActive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  transition: var(--transition);
+
+  .navWrap {
+    @include flex(row, center, space-between);
+    transition: var(--transition);
+    transition-delay: --var(--deley);
+    overflow: visible;
+    padding: 8px 0;
+
+    @include lg-max {
+      background-color: var(--color-dark);
+      width: 100%;
+      padding: 10px 20px;
+      top: 0;
+    }
+  }
+
+  .navigationLogo,
+  .navigationLogoActive {
+    @include flex(column, center, center);
+    z-index: 2;
+    font-size: var(--fs-1);
+    margin: 0;
+    transition: var(--transition);
+
+    img {
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+
+  .navLangOptionsWrap {
+    @include flex(row, center, flex-end);
+    width: 80%;
+
+    @include lg-max {
+      justify-content: center;
+    }
+
+    @include sm-max {
+      width: 50%;
+    }
+
+    .navigationList {
+      @include flex(row, stretch, flex-end);
+      text-transform: uppercase;
+      align-content: stretch;
+
+      @include lg-max {
+        display: none;
+      }
+    }
+    .lanRegWrap {
+      display: flex;
+    }
+  }
+
+  .sidebarIcon {
+    display: none;
+    cursor: pointer;
+    width: 20px;
+
+    height: 20px;
+
+    @include lg-max {
+      display: block;
+    }
+
+    img {
+      @include img;
+    }
+  }
+}
+
+.navigation {
+  padding: 0;
+
+  @include lg-max {
+    padding: 0;
+  }
+}
+
+.navigationActive {
+  background-color: var(--color-dark);
+
+  @include lg-max {
+    padding: 0;
+  }
+}
+
+.sidebar {
+  @include flex(column, center, flex-start);
+  position: fixed;
+  background-color: rgba(0, 0, 0, 1);
+  width: 100%;
+  min-height: 80vh;
+  height: 90vh;
+  right: 0;
+  top: 90px;
+
+  transition: var(--transition);
+
+  overflow-y: auto;
+
+  @include lg-min {
+    display: none;
+  }
+}
+
+.link {
+  width: auto;
+}

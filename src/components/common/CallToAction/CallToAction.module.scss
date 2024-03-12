@@ -1,0 +1,75 @@
+@import "../../../styles/mixins.scss";
+
+.callToAction {
+  @include flex(row, flex-end, space-between);
+  flex-wrap: wrap;
+  position: relative;
+  padding: 20px 0;
+
+  @include sm-max {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+.headlingsWrap {
+  color: var(--color-light);
+  text-align: left;
+  font-family: var(--header-font);
+  margin-right: 0px;
+  min-height: 200px;
+
+  @include sm-max {
+    padding: 0 0;
+  }
+
+  .titleCall {
+    font-weight: var(--normal);
+    letter-spacing: 2px;
+    font-size: 20px;
+
+    margin-bottom: 14px;
+  }
+
+  .subtitleCall {
+    font-size: var(--fs-3);
+
+    font-weight: var(--normal);
+  }
+}
+
+.callToAction {
+  a {
+    position: absolute;
+    margin: 30px 0 0 0px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: var(--color-light);
+    }
+
+    @include xl-max {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+    }
+
+    @include lg-max {
+      bottom: 20px;
+      height: auto;
+    }
+
+    @include md-max {
+      bottom: 20px;
+      height: auto;
+    }
+
+    @include sm-max {
+      bottom: 20px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../../../styles/mixins";
+
+.callToAction {
+  padding: 70px 0;
+  overflow: hidden;
+
+  .headlingsWrap {
+    color: var(--color-light);
+    text-align: left;
+    font-family: var(--header-font);
+    width: 20%;
+
+    .subtitleCall {
+      line-height: 40px;
+      font-weight: var(--fw-400);
+      width: 100vw;
+
+      @include md-max {
+        line-height: 26px;
+      }
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  }
+
+  .formRequest {
+    @include flex(row, center, space-between);
+    flex-wrap: wrap;
+    gap: 20px;
+
+    ul {
+      @include flex(row, flex-start, flex-start);
+      flex-wrap: wrap;
+      flex-grow: 1;
+      padding: 30px 0;
+      gap: 50px;
+
+      li {
+        width: 400px;
+
+        @include md-max {
+          width: 100%;
+        }
+
+        .customImput,
+        .react-international-phone-input {
+          width: 100%;
+          padding: 10px;
+
+          border: 1px solid var(--color-light);
+          border-radius: 5px;
+          font-size: 16px;
+        }
+
+        .phoneSelect {
+          border-radius: 5px;
+          border: 1px solid var(--color-light);
+
+          background-color: var(--color-light);
+          padding: 10px 0 10px 10px;
+
+          input {
+            width: 100%;
+            appearance: none;
+            border: none;
+            padding: 0 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.submitBtn {
+  font-weight: var(--fw-600);
+  padding: 10px 30px;
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  width: 300px;
+
+  &:hover {
+    background-color: lighten($color: #000000, $amount: 10);
+    border-color: lighten($color: #000000, $amount: 10);
+  }
+
+  @include md-max {
+    width: 100%;
+  }
+}

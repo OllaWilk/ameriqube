@@ -1,0 +1,62 @@
+@import "../../../styles/mixins";
+
+.homePage {
+  .splashBackgroundImg,
+  .offerBackground {
+    min-height: 90svh;
+    @include flex(column, stretch, center);
+    @include splash;
+
+    &::before {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    @include sm-max {
+      min-height: 100svh;
+      height: auto;
+      padding: 70px 0;
+    }
+
+    .videoWrap {
+      position: absolute;
+      z-index: -99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .offerBackground {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+.callToActionBackground {
+  background-color: var(--color-blue-dark);
+  padding: 100px 0;
+  min-height: 30svh;
+
+  @include lg-max {
+    display: flex;
+    align-items: center;
+  }
+
+  @include md-max {
+    padding: 20px 0;
+    min-height: 40vh;
+  }
+
+  @include sm-max {
+    min-height: 50vh;
+    height: 50vh;
+  }
+}

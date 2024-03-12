@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { Route, Routes } from "react-router-dom";
+import { LocaleContext } from "./contexts/LocaleContext";
+import { loadLanguage } from "./utils/loadLanguage";
+import { CookieInfo } from "./components/common";
+import {
+  About,
+  Home,
+  Redirect,
+  NotFound,
+  Contact,
+  Footer,
+  Navigation,
+  CookiePage,
+} from "./components/views/index";
 
-function App() {
+export const App = () => {
+  const { language, region } = useContext(LocaleContext);
+  const data = loadLanguage(language);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <CookieInfo cookie={data.cookie} />
 
-export default App;
+      <Navigation
+        navigationNavbar={data.navigationNavbar}
+        productsAndServices={data.productsAndServices}
+        geolocation={data.geolocation}
+      />
+      <Routes>
+        <Route path="/" element={<Redirect redirectUrl={"home"} />} />
+        <Route path="/ameriqube" element={<Redirect redirectUrl={"home"} />} />
+        <Route path="/home" element={<Home home={data.home} />} />
+        <Route
+          path={`/about`}
+          element={<About about={data.about} region={region} />}
+        />
+        <Route
+          path="/contact"
+          element={<Contact contact={data.contact} region={region} />}
+        />
+        <Route
+          path="/cookies"
+          element={<CookiePage cookiePage={data.cookiePage} region={region} />}
+        />
+        <Route path="*" element={<NotFound notFound={data.notFound} />} />
+      </Routes>
+      <Footer
+        footer={data.footer}
+        navigationNavbar={data.navigationNavbar}
+        region={region}
+      />
+    </>
+  );
+};

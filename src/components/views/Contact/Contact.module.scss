@@ -1,0 +1,69 @@
+@import "../../../styles/mixins";
+
+.contact {
+  background-color: var(--color-dark);
+  z-index: -999;
+  word-wrap: break-word;
+}
+
+.header {
+  background-color: var(--color-blue-dark);
+  @include flex(column, center, center);
+
+  @include md-max {
+    padding: 10px 0;
+  }
+
+  @include sm-max {
+    padding: 80px 0;
+  }
+}
+
+.wraper {
+  position: relative;
+  padding: 70px 0;
+
+  .videoWrap {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contactPage {
+    @include flex(column, center, center);
+    position: relative;
+
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 4px;
+    flex-grow: 1;
+    height: auto;
+
+    @include sm-max {
+      padding: 20px 10px;
+    }
+  }
+}
+
+.requestToCall {
+  background-color: var(--color-blue-dark);
+}
+
+.text {
+  @extend .text;
+  color: var(--color-light);
+  padding-bottom: 27px;
+
+  @include sm-max {
+    padding-bottom: 0;
+  }
+}

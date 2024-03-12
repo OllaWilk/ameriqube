@@ -1,0 +1,142 @@
+@import "../../../styles/mixins.scss";
+
+.callToActionBackground {
+  background-color: var(--color-blue-dark);
+  padding: 100px 0;
+  min-height: 30svh;
+
+  @include lg-max {
+    display: flex;
+    align-items: center;
+  }
+
+  @include md-max {
+    padding: 20px 0;
+    min-height: 40vh;
+  }
+
+  @include sm-max {
+    min-height: 50vh;
+    height: 50vh;
+  }
+}
+
+.technical {
+  overflow: hidden;
+
+  .greenbackground {
+    background-color: var(--color-blue-dark);
+    padding: 40px 0;
+
+    @include md-max {
+      padding: 10px 0;
+    }
+
+    @include sm-max {
+      padding: 80px 0;
+    }
+  }
+
+  .sectionWrap {
+    min-height: 100vh;
+    @include flex(row, center, space-between);
+    padding: 120px 0 90px 0;
+
+    .documentsWrap {
+      @include flex(row, flex-start, space-between);
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .card {
+        @include flex(column, space-between, space-between);
+        width: 48%;
+        min-height: 350px;
+        height: 380px;
+        border: 1px solid #ccc;
+        box-shadow: var(--shadow);
+        text-align: left;
+
+        @include lg-max {
+          height: 400px;
+        }
+
+        @include md-max {
+          padding: 0 20px 20px 20px;
+          width: 100%;
+          height: auto;
+        }
+
+        @media screen and (min-width: 766px) and (max-width: 940px) {
+          width: 100%;
+        }
+
+        .cartWrap {
+          @include flex(column, flex-start, flex-start);
+          padding: 30px 30px 0 30px;
+
+          @include xl-max {
+            max-width: 100%;
+            min-width: 100%;
+          }
+
+          @include md-max {
+            padding: 20px 10px;
+            justify-content: center;
+          }
+
+          .logos {
+            height: 100%;
+            width: 100%;
+            @include flex(row, flex-end, space-between);
+
+            @include sm-max {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            img {
+              object-fit: contain;
+              width: 100px;
+              height: 100%;
+              margin-right: 30px;
+
+              @media screen and (min-width: 766px) and (max-width: 940px) {
+                width: 100px;
+                height: 100px;
+              }
+
+              @include sm-max {
+                margin-right: 0;
+                margin-bottom: 30px;
+              }
+            }
+          }
+
+          .header {
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 100%;
+
+            @include sm-max {
+              text-align: center;
+            }
+          }
+
+          .text {
+            margin: 20px 0 0 0;
+            line-height: 26px;
+          }
+        }
+
+        .btnDownloadWrap {
+          @include flex(column, flex-start, space-between);
+          margin: 30px;
+
+          @include md-max {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

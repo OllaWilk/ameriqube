@@ -13,10 +13,8 @@
   }
 
   .contentWrapper {
-    @include flex(column, flex-start, center);
     height: auto;
     text-align: left;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
     @include sm-max {
       padding-bottom: 0;
@@ -35,19 +33,7 @@
     }
 
     .btnsWrap {
-      @include flex(row, center, space-beween);
-
-      @include sm-max {
-        @include flex(column, flex-start, space-beween);
-      }
-
-      a {
-        margin: 30px 30px 0 0;
-
-        @include sm-max {
-          margin: 20px 10px 0 0;
-        }
-      }
+      @include flex(row, center, space-between);
     }
   }
 }

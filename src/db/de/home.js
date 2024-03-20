@@ -1,19 +1,50 @@
 import { photos, logos } from "../../images/index";
 import videoBg from "../../images/videoBg.mp4";
+import videoServices from "../../images/WideoServices.mp4";
 
 export const home = {
   imgBg: photos.splash,
   videoBg: videoBg,
-  header: {
-    companyName: "WIR SIND SMARTqube INGENIEURE",
-    slogan: "WIR WERDEN DIE ZUKUNFT GESTALTEN",
-    description:
-      "SMARTqube ist ein Team von Ingenieuren, das die Zukunft leidenschaftlich mit den neuesten technologischen Lösungen gestaltet.",
-    greenBtn: "kontakt",
-    greenBtnLinkTo: "contact",
-    transparentBtn: "über uns",
-    transparentBtnLinkTo: "about",
-  },
+  slides: [
+    {
+      videoBg: videoBg,
+      header:
+        "INTEGRATION VON INNOVATION UND TECHNOLOGIE, UM UMFASSENDE LÖSUNGEN FÜR JEDEN ASPEKT IHRES PROJEKTS ZU LIEFERN",
+      logo: logos.logoAMERIqubeText,
+      subtitle: "Umfassender Ansatz für Ihre Projekte",
+      text: "AMERIqube",
+      buttonMainText: "Kontaktieren Sie uns",
+      buttonMainUrl: "contact",
+      buttonTransparentText: "Über uns",
+      buttonTransparentUrl: "about",
+    },
+    {
+      videoBg: "",
+      header:
+        "HOCHWERTIGE KLIMAANLAGEN EIGENER PRODUKTION, ENTWICKELT FÜR EFFIZIENTEN BETRIEB AUCH IN INDUSTRIEZONE ZONE1 UND ZONE2",
+      logo: logos.logoICEqube,
+      subtitle: "Fortgeschrittene Klimaanlagen für jede Umgebung",
+      text: "ICEqube",
+      buttonMainText: "Besuchen Sie ICEqube",
+      buttonMainUrl: "https://www.iceqube.com",
+      buttonTransparentText:
+        "BESUCHEN SIE DIE WEBSITE UND BERECHNEN SIE IHR PROJEKT HEUTE",
+      buttonTransparentUrl: "https://www.iceqube.com/technical/calculator/",
+    },
+    {
+      videoBg: videoServices,
+      header:
+        "UNSER TEAM VON INGENIEUREN IST SPEZIALISIERT AUF DESIGN, WARTUNG UND PLUG-AND-PLAY-LÖSUNGEN, BIETET UMFASSENDE UNTERSTÜTZUNG VOR ORT UND AUS DER FERNE FÜR DIE ANSPRUCHSVOLLSTEN PROJEKTE",
+      logo: logos.logoSMARTqube,
+      subtitle: "Ingenieurwesen in seiner besten Form",
+      text: "SMARTqube",
+      buttonMainText: "Besuchen Sie SMARTqube",
+      buttonMainUrl: "https://www.smartqube.com",
+      buttonTransparentText:
+        "Umfassende Integrationslösungen für die Industrie",
+      buttonTransparentUrl: "https://www.smartqube.com/#/integration",
+    },
+  ],
   about: {
     subtitle: "willkommen bei",
     title: "SMARTqube",

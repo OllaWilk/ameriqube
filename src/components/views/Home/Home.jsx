@@ -2,36 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {
-  Header,
   AboutUs,
   Offer,
   CallToAction,
   OurMission,
   ScrollBtn,
+  Carousel,
 } from "../../common/index";
 
 import styles from "./Home.module.scss";
 
 export const Home = ({ home }) => {
-  const { imgBg, header, about, offers, callToaction, mission } = home;
+  const { imgBg, slides, about, offers, callToaction, mission } = home;
 
   return (
-    <div className={styles.homePage}>
+    <div className={styles.homePage} id="header">
       <ScrollBtn />
       {/* HEADER */}
-      <section className={styles.splashBackgroundImg} id="header">
-        <div className={styles.videoWrap}>
-          <img src={imgBg} alt="splash" />
-        </div>
-        <Header
-          description={header.description}
-          mainTitle={header.slogan}
-          subtitle={header.companyName}
-          greenBtn={header.greenBtn}
-          transparentBtn={header.transparentBtn}
-          greenBtnLinkTo={header.greenBtnLinkTo}
-          transparentBtnLinkTo={header.transparentBtnLinkTo}
-        />
+      <section>
+        <Carousel slides={slides} />
       </section>
       {/* <Welcome /> */}
       <section id="about">

@@ -4,18 +4,16 @@ export const about = {
   imgBg: photos.splash,
   header: {
     companyName: "PROJEKTUJEMY PRZYSZŁOŚĆ",
-    slogan: "SMARTqube",
+    slogan: "AMERIqube",
     description: "Nasz zespół to nasz największy atut.",
     greenBtn: "kontakt",
-    transparentBtn: "rozwiązania",
     greenBtnLinkTo: "contact",
-    transparentBtnLinkTo: "climatecontrol",
   },
   companyDescription: [
     {
       header: "NASZE KORZENIE",
       section1:
-        "SMARTqube to polska firma ściśle związana z ICEqube w Pensylwanii, USA. Łączymy najlepsze atuty obu pochodzeń, łącząc niezawodność naszych rozwiązań z elastycznym i innowacyjnym podejściem. Nasza synergia tworzy unikalną podstawę, zapewniając najwyższą jakość i innowacyjność we wszystkim, co robimy.",
+        "AMERIqube to polska firma ściśle związana z ICEqube w Pensylwanii, USA. Łączymy najlepsze atuty obu pochodzeń, łącząc niezawodność naszych rozwiązań z elastycznym i innowacyjnym podejściem. Nasza synergia tworzy unikalną podstawę, zapewniając najwyższą jakość i innowacyjność we wszystkim, co robimy.",
       section2: "Witamy w świecie precyzji i przedsiębiorczości.",
       img: photos.iceCube,
     },
@@ -23,7 +21,7 @@ export const about = {
   team: {
     slogan: "ODKRYJ NASZĄ ZAŁOGĘ",
     title: "NASI LUDZIE TO NASZ NAJWIĘKSZY ATUT",
-    text: "W SMARTqube wierzymy, że sukces naszej firmy tkwi w ludziach, którzy ją napędzają. Nasza załoga składa się nie tylko z profesjonalistów w swoich dziedzinach, ale przede wszystkim z ludzi pełnych pasji, kreatywności i poświęcenia.",
+    text: "W AMERIqube wierzymy, że sukces naszej firmy tkwi w ludziach, którzy ją napędzają. Nasza załoga składa się nie tylko z profesjonalistów w swoich dziedzinach, ale przede wszystkim z ludzi pełnych pasji, kreatywności i poświęcenia.",
     galery:
       "https://images.pexels.com/photos/5676679/pexels-photo-5676679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },

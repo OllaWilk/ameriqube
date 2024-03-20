@@ -38,11 +38,7 @@ export const productsAndServices = {
       },
     ],
   },
-  "climate control": {
-    abstract:
-      "KLIMAKONTROLLE BEINHALTET DIE SCHAFFUNG OPTIMALER BEDINGUNGEN FÜR EMPFINDLICHE AUSRÜSTUNG DURCH REGULIERUNG VON TEMPERATUR UND FEUCHTIGKEIT. UNSERE LÖSUNGEN UMFASSEN DIE KLEINSTE KLIMAANLAGE DER BRANCHE, DIE DÜNNSTE KLIMAANLAGE, DIE HÖCHSTE BETRIEBSTEMPERATUR, DIE GRÖSSTE AUSWAHL AN KLIMAKONTROLLEN FÜR GEFÄHRLICHE BEREICHE UND VIELES MEHR.",
-    linkTo: ["Klimakontrolle erkunden", "climatecontrol"],
-  },
+
   ICEqube: {
     id: "usa",
     img: photos.logoAMERIqube,
@@ -50,18 +46,12 @@ export const productsAndServices = {
       "Ice Qube liefert eine breite Palette von hochwertigen Produkten zur Klimakontrolle. Smart Qube nutzt ihre Lösungen und fungiert auch als Distributor für Europa.",
     linkTo: ["ICEqube besuchen", "https://www.iceqube.com"],
   },
-
-  services: {
-    abstract:
-      "Wir bieten eine breite Palette von Dienstleistungen an, einschließlich Gerätewartung, Kalibrierung und Fehlerbehebung. Unser Team von Experten stellt sicher, dass Ihre Systeme mit maximaler Leistung und in Übereinstimmung mit Industriestandards arbeiten.",
-    linkTo: ["Dienstleistungen erkunden", "services"],
-  },
 };
 
 export const footer = {
   logo: {
     imgUrl: logos.logoAMERIqube,
-    companyName: "SMARTqube",
+    companyName: "AMERIqube",
     street: "ul. Rakietowa 29E",
     zip: "51-311 Breslau, Polen",
   },
@@ -73,7 +63,7 @@ export const footer = {
 
   iso: [
     "ISO 9001:2015 Zertifikatsnummer: 017884",
-    "© 2024 SMARTqube",
+    "© 2024 AMERIqube",
     "Alle Rechte vorbehalten",
   ],
 

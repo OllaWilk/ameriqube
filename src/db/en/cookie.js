@@ -14,7 +14,7 @@ export const cookiePage = {
   article2:
     "Cookies ('cookies') are computer data, particularly text files, that are stored in the User's terminal device and are intended for use with the website. Cookies usually contain the name of the website they come from, the duration of their storage on the terminal device, and a unique number.",
   article3:
-    "The entity placing cookies on the User's terminal device and accessing them is SmartQube with its registered office in Wrocław at Rakietowa 29E, 54-615 Wrocław, KRS: 0000984616; TAX ID (NIP): 89719096, REGON: 522685620 („Administrator”).",
+    "The entity placing cookies on the User's terminal device and accessing them is AMERIqube with its registered office in Wrocław at Rakietowa 29E, 54-615 Wrocław, KRS: 0000984616; TAX ID (NIP): 89719096, REGON: 522685620 („Administrator”).",
   article4: "Cookies are used for:",
   article5:
     "a) adapting the content of the website to the User's preferences and optimizing the use of the Website; in particular, these files allow recognizing the User's device and properly display the website, tailored to their individual needs;",

@@ -22,7 +22,7 @@ const customStyles = {
   }),
   option: (provided, state) => ({
     ...provided,
-    backgroundColor: state.isFocused ? "#5dbb4e" : "black",
+    backgroundColor: state.isFocused ? "#e31e33" : "black",
     ":active": {
       backgroundColor: "gray",
     },

@@ -7,15 +7,13 @@ export const about = {
     slogan: "AMERIqube",
     description: "Unser Team ist unser größtes Kapital.",
     greenBtn: "kontakt",
-    transparentBtn: "lösungen",
     greenBtnLinkTo: "contact",
-    transparentBtnLinkTo: "climatecontrol",
   },
   companyDescription: [
     {
       header: "UNSERE WURZELN",
       section1:
-        "SMARTqube ist ein polnisches Unternehmen, das eng mit ICEqube in Pennsylvania, USA, verbunden ist. Wir bringen die besten Eigenschaften beider Herkünfte zusammen und kombinieren die Zuverlässigkeit unserer Lösungen mit einem flexiblen und innovativen Ansatz. Unsere Synergie schafft eine einzigartige Basis und garantiert höchste Qualität und Spitzeninnovation in allem, was wir tun.",
+        "AMERIqube ist ein polnisches Unternehmen, das eng mit ICEqube in Pennsylvania, USA, verbunden ist. Wir bringen die besten Eigenschaften beider Herkünfte zusammen und kombinieren die Zuverlässigkeit unserer Lösungen mit einem flexiblen und innovativen Ansatz. Unsere Synergie schafft eine einzigartige Basis und garantiert höchste Qualität und Spitzeninnovation in allem, was wir tun.",
       section2:
         "Willkommen zu nahtloser Genialität von Präzision und Unternehmertum.",
       img: logos.logoICEqube,
@@ -23,7 +21,7 @@ export const about = {
     {
       header: "UNSERE LEUTE",
       section1:
-        "Bei SMARTqube trägt jeder von uns jahrelange Erfahrung aus verschiedenen internationalen Organisationen bei, die in einer gemeinsamen Vision und grenzenloser Leidenschaft für Kreativität gipfelt. Unsere kollektive Reise übersteigt die bloße Expertise und umfasst einen Reichtum an Ideen und unerschütterlichem Engagement.",
+        "Bei AMERIqube trägt jeder von uns jahrelange Erfahrung aus verschiedenen internationalen Organisationen bei, die in einer gemeinsamen Vision und grenzenloser Leidenschaft für Kreativität gipfelt. Unsere kollektive Reise übersteigt die bloße Expertise und umfasst einen Reichtum an Ideen und unerschütterlichem Engagement.",
       section2:
         "Unsere Bemühungen und Fachkenntnisse haben Auswirkungen auf verschiedene Bereiche gehabt, einschließlich Kraftwerke im Nahen Osten, Stahlwerke in Osteuropa und Plattformen in der Nordsee. Der Kern unserer gemeinsamen Erfahrung dreht sich um Prozessanalyse und Messungen (Instrumentierung).",
       img: logos.logoAMERIqube,
@@ -32,7 +30,7 @@ export const about = {
   team: {
     slogan: "ENTDECKEN SIE UNSERE MANNSCHAFT",
     title: "UNSERE MENSCHEN SIND UNSER GRÖSSTES KAPITAL",
-    text: "Bei SMARTqube glauben wir, dass der Erfolg unseres Unternehmens in den Menschen liegt, die es antreiben. Unsere Crew besteht nicht nur aus Fachleuten in ihren Bereichen, sondern vor allem aus Menschen, die vor Leidenschaft, Kreativität und Engagement strotzen",
+    text: "Bei AMERIqube glauben wir, dass der Erfolg unseres Unternehmens in den Menschen liegt, die es antreiben. Unsere Crew besteht nicht nur aus Fachleuten in ihren Bereichen, sondern vor allem aus Menschen, die vor Leidenschaft, Kreativität und Engagement strotzen",
     galery:
       "https://images.pexels.com/photos/5676679/pexels-photo-5676679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
@@ -51,7 +49,7 @@ export const about = {
         title:
           "AUSSCHREIBUNGSUNTERSTÜTZUNG, STANDORTBEWERTUNGEN UND MACHBARKEITSSTUDIEN",
         content:
-          "Unser Kundensupportteam, zusammen mit einem Netzwerk von Vertriebspartnern in ganz Europa, steht bereit, Sie mit ihrem besten Wissen bei der Auswahl der richtigen Lösungen zu unterstützen, um selbst die anspruchsvollsten Anwendungen zu erfüllen. Bei SMARTqube ist Ihre Zufriedenheit und Ihr Erfolg unsere Priorität!",
+          "Unser Kundensupportteam, zusammen mit einem Netzwerk von Vertriebspartnern in ganz Europa, steht bereit, Sie mit ihrem besten Wissen bei der Auswahl der richtigen Lösungen zu unterstützen, um selbst die anspruchsvollsten Anwendungen zu erfüllen. Bei AMERIqube ist Ihre Zufriedenheit und Ihr Erfolg unsere Priorität!",
         img: photos.support,
       },
       {
@@ -89,7 +87,7 @@ export const about = {
         title:
           "AUSSCHREIBUNGSUNTERSTÜTZUNG, STANDORTBEWERTUNGEN UND MACHBARKEITSSTUDIEN",
         content:
-          "Unser Kundensupportteam, zusammen mit einem Netzwerk von Vertriebspartnern in ganz Europa, steht bereit, Sie mit ihrem besten Wissen bei der Auswahl der richtigen Lösungen zu unterstützen, um selbst die anspruchsvollsten Anwendungen zu erfüllen. Bei SMARTqube ist Ihre Zufriedenheit und Ihr Erfolg unsere Priorität!",
+          "Unser Kundensupportteam, zusammen mit einem Netzwerk von Vertriebspartnern in ganz Europa, steht bereit, Sie mit ihrem besten Wissen bei der Auswahl der richtigen Lösungen zu unterstützen, um selbst die anspruchsvollsten Anwendungen zu erfüllen. Bei AMERIqube ist Ihre Zufriedenheit und Ihr Erfolg unsere Priorität!",
         img: photos.support,
       },
       {
@@ -124,14 +122,14 @@ export const about = {
   location: {
     src: photos.headquarters,
     title: "Hauptsitz in Breslau",
-    subtitle: "BESUCHEN SIE UNSER SMARTqube TEAM",
-    description: `Unsere Smartqube-Einrichtung ist strategisch günstig in Breslau, Polen, direkt neben der Autobahn A8 gelegen, was einen einfachen Zugang für alle Arten von Fracht, einschließlich Übergrößen-Transport, ermöglicht. Gäste können den internationalen Flughafen Breslau in nur 5 Minuten erreichen. Unser Hauptsitz umfasst ein Lager, eine zollfreie Zone für eingehende Ausrüstung aus den Vereinigten Staaten, eine Werkstatt und Büros.`,
+    subtitle: "BESUCHEN SIE UNSER AMERIqube TEAM",
+    description: `Unsere AMERIqube-Einrichtung ist strategisch günstig in Breslau, Polen, direkt neben der Autobahn A8 gelegen, was einen einfachen Zugang für alle Arten von Fracht, einschließlich Übergrößen-Transport, ermöglicht. Gäste können den internationalen Flughafen Breslau in nur 5 Minuten erreichen. Unser Hauptsitz umfasst ein Lager, eine zollfreie Zone für eingehende Ausrüstung aus den Vereinigten Staaten, eine Werkstatt und Büros.`,
   },
   locationUSA: {
     src: photos.sartQubeHeadquarters,
     title: "Hauptsitz in Greensburg, PA",
-    subtitle: "BESUCHEN SIE UNSER SMARTqube TEAM",
+    subtitle: "BESUCHEN SIE UNSER AMERIqube TEAM",
     description:
-      "Unsere Smartqube-Einrichtung in Greensburg, PA, befindet sich idealerweise an der 141 Wilson Avenue, nahe wichtiger Straßen, was eine effiziente Logistik und Transport ermöglicht. In einer dynamisch entwickelnden Region gelegen, garantieren wir Zugang zu einem Team von Fachleuten und einer umfangreichen Infrastruktur. Unser Lager zusammen mit den Büros bietet eine sichere und effektive Umgebung für unsere Operationen und ermöglicht es uns, den wachsenden geschäftlichen Anforderungen gerecht zu werden.",
+      "Unsere AMERIqube-Einrichtung in Greensburg, PA, befindet sich idealerweise an der 141 Wilson Avenue, nahe wichtiger Straßen, was eine effiziente Logistik und Transport ermöglicht. In einer dynamisch entwickelnden Region gelegen, garantieren wir Zugang zu einem Team von Fachleuten und einer umfangreichen Infrastruktur. Unser Lager zusammen mit den Büros bietet eine sichere und effektive Umgebung für unsere Operationen und ermöglicht es uns, den wachsenden geschäftlichen Anforderungen gerecht zu werden.",
   },
 };

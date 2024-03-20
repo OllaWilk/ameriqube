@@ -14,7 +14,7 @@ export const cookiePage = {
   article2:
     "Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika i przeznaczone są do korzystania z witryny. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.",
   article3:
-    "Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika pliki cookies oraz uzyskującym do nich dostęp jest SmartQube z siedzibą we Wrocławiu ul. Rakietowa 29E, 54-615 Wrocław KRS: 0000984616; NIP: 89719096, REGON: 522685620 („Administrator”).",
+    "Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika pliki cookies oraz uzyskującym do nich dostęp jest AMERIqube z siedzibą we Wrocławiu ul. Rakietowa 29E, 54-615 Wrocław KRS: 0000984616; NIP: 89719096, REGON: 522685620 („Administrator”).",
   article4: "Pliki cookies wykorzystywane są w celu:",
   article5:
     "a) dostosowania zawartości witryny do preferencji Użytkownika oraz optymalizacji korzystania ze Strony; w szczególności pliki te pozwalają rozpoznać urządzenie Użytkownika i odpowiednio wyświetlić stronę internetową, dostosowaną do jego indywidualnych potrzeb;",

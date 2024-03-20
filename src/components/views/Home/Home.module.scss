@@ -1,9 +1,13 @@
 @import "../../../styles/mixins";
 
+.bannerContainer {
+  background: var(--background-radial);
+  overflow: hidden;
+}
+
 .homePage {
-  .splashBackgroundImg,
   .offerBackground {
-    min-height: 90svh;
+    min-height: 100svh;
     @include flex(column, stretch, center);
     @include splash;
 

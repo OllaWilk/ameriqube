@@ -44,7 +44,7 @@
       @include flex(row, flex-start, space-between);
 
       img {
-        width: 170px;
+        width: auto;
         height: 170px;
         margin-right: 20px;
       }

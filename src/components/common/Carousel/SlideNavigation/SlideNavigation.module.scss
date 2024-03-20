@@ -1,0 +1,54 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/typography.scss";
+
+.slideNavigation {
+  position: absolute;
+  bottom: 80px;
+  right: 250px;
+  width: 100%;
+  @include flex(row, flex-end, space-between);
+  height: 100px;
+
+  @include lg-max {
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+  }
+
+  @include sm-max {
+    display: none;
+  }
+
+  .prevNext {
+    @include flex(row, flex-end, flex-end);
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    span {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid var(--color-light);
+      cursor: pointer;
+      font-size: 1.5em;
+      color: var(--color-light);
+      transition: var(--transition);
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .pause {
+        padding: 5px;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+}

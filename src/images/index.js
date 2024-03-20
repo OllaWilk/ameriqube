@@ -40,6 +40,7 @@ import onSite from "./photos/onSite.jpeg";
 import resouces from "./photos/resources.jpg";
 import sartQubeHeadquarters from "./photos/smartQubeHeadquarters.jpg";
 import worldMap from "./photos/worldMap.png";
+import marbleSplash from "./photos/marble_splash.png";
 
 import iceProduct from "./photos/iceProduct.jpg";
 import tenderSupport from "./photos/tenderSupport.jpg";
@@ -116,6 +117,7 @@ export const photos = {
   resouces,
   sartQubeHeadquarters,
   worldMap,
+  marbleSplash,
 };
 
 export const iso = {

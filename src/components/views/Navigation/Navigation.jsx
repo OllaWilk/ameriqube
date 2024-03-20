@@ -82,7 +82,9 @@ export const Navigation = ({
             />
           </div>
           {/* SIDE NAVIGATION */}
-          <div className={`${styles.sidebar} ${isSidebarOpen ? "" : "closed"}`}>
+          <div
+            className={`${styles.sidebar} ${isSidebarOpen ? "" : "closed"} `}
+          >
             {navigationNavbar.map((item, index) => (
               <SideNavigation
                 index={index}

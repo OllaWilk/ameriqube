@@ -1,0 +1,18 @@
+@import "../../../../styles/mixins";
+
+.companyWrap {
+  color: var(--color-light);
+  @include flex(column, center, flex-end);
+
+  h2 {
+    font-family: var(--header-font);
+    font-weight: var(--fw-400);
+    font-size: 30px;
+    text-align: right;
+
+    @include sm-max {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}

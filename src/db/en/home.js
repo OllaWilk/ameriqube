@@ -1,19 +1,51 @@
 import { photos, logos } from "../../images/index";
 import videoBg from "../../images/videoBg.mp4";
+import videoServices from "../../images/WideoServices.mp4";
+import ICEqubeProducts from "../../images/ICEqubeProducts.mp4";
 
 export const home = {
   imgBg: photos.splash,
   videoBg: videoBg,
-  header: {
-    companyName:
-      "AMERIqube, Excellence in Climate Control and Enclosure Solutions Worldwide ",
-    slogan: "Empowering Excellence, Defining Standards",
-    description: "",
-    greenBtn: "contact",
-    greenBtnLinkTo: "contact",
-    transparentBtn: "about",
-    transparentBtnLinkTo: "about",
-  },
+  slides: [
+    {
+      videoBg: videoBg,
+      header:
+        "WE INTEGRATE INNOVATION AND TECHNOLOGY TO DELIVER COMPREHENSIVE SOLUTIONS FOR EVERY ASPECT OF YOUR PROJECT",
+      logo: logos.logoAMERIqubeText,
+      subtitle: "Comprehensive Approach to Your Projects",
+      text: "AMERIqube",
+      buttonMainText: "Contact us",
+      buttonMainUrl: "contact",
+      buttonTransparentText: "Read more",
+      buttonTransparentUrl: "about",
+    },
+    {
+      videoBg: ICEqubeProducts,
+      header:
+        "HIGH-QUALITY AIR CONDITIONERS OF OUR OWN PRODUCTION, DESIGNED FOR EFFICIENT OPERATION EVEN IN INDUSTRIAL ZONES ZONE1 AND ZONE2",
+      logo: logos.logoICEqube,
+      subtitle: "Advanced Air Conditioners for Every Environment",
+      text: "ICEqube",
+      buttonMainText: "Visit ICEqube",
+      buttonMainUrl: "https://www.iceqube.com",
+      buttonTransparentText:
+        "VISIT THE WEBSITE AND CALCULATE YOUR PROJECT TODAY",
+      buttonTransparentUrl: "https://www.iceqube.com/technical/calculator/",
+    },
+    {
+      videoBg: videoServices,
+      header:
+        "OUR TEAM OF ENGINEERS SPECIALIZES IN DESIGN, MAINTENANCE, AND PLUG-AND-PLAY SOLUTIONS, OFFERING COMPREHENSIVE ONSITE AND REMOTE SUPPORT FOR THE MOST DEMANDING PROJECTS",
+      logo: logos.logoSMARTqube,
+      subtitle: "Engineering at Its Finest",
+      text: "SMARTqube",
+      buttonMainText: "Visit SMARTqube",
+      buttonMainUrl: "https://www.smartqube.com",
+      buttonTransparentText: "Comprehensive Industrial Integration Solutions",
+      buttonTransparentUrl: "https://www.smartqube.com/#/integration",
+    },
+  ],
+
   about: {
     subtitle: "welcome to",
     title: "AMERIqube",

@@ -1,92 +1,73 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
+import { SlideNavigation } from "./SlideNavigation/SlideNavigation";
+import { CarouselSlide } from "./CarouselSlide/CarouselSlide";
 
 import styles from "./Carousel.module.scss";
 
-export const Carousel = ({ carousel }) => {
-  const { header, span, text, button, linkTo, images } = carousel;
-
+export const Carousel = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isIntervalActive, setIsIntervalActive] = useState(true);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4500);
+    let timer;
+    if (isIntervalActive) {
+      timer = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      }, 6000);
+    }
 
     return () => clearInterval(timer);
-  }, [images.length]);
+  }, [slides.length, isIntervalActive]);
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
     );
-  };
+    setIsIntervalActive(false);
+  }, [slides.length]);
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  const goToNext = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    setIsIntervalActive(false);
+  }, [slides.length]);
+
+  const resumeAutoSlide = useCallback(() => {
+    setIsIntervalActive(true);
+  }, []);
 
   return (
     <>
       <div className={styles.carouselContainer}>
-        <div className={styles.text}>
-          <h2>
-            {header}
-            <span>{span}</span>
-          </h2>
-          <p>{text}</p>
-          <a
-            href={linkTo}
-            className={styles.caltulatorBtn}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {button}
-          </a>
-        </div>
         <div className={styles.slider}>
-          {images.map((image, index) => (
-            <div
-              key={`carousel-img-${index}-${image}`}
-              className={`${styles.slide} ${
-                index === currentIndex ? `${styles.active}` : ""
-              }`}
-            >
-              <img src={image} alt={`Slide ${index}`} />
-            </div>
+          {slides.map((slide, index) => (
+            <CarouselSlide
+              key={`${index}-header-carousel`}
+              slide={slide}
+              isActive={index === currentIndex}
+            />
           ))}
         </div>
-      </div>
-      <div className={styles.slideNavigation}>
-        <div></div>
-        <div className={styles.prevNext}>
-          <a
-            href="https://www.iceqube.com"
-            className={styles.iceQubeName}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ICEqube.com
-          </a>
-          <span className={styles.prev} onClick={goToPrevious}>
-            &lt;
-          </span>
-          <span className={styles.next} onClick={goToNext}>
-            &gt;
-          </span>
-        </div>
+        <SlideNavigation
+          index={currentIndex}
+          goToPrevious={goToPrevious}
+          goToNext={goToNext}
+          resumeAutoSlide={resumeAutoSlide}
+          isPaused={!isIntervalActive}
+        />
       </div>
     </>
   );
 };
 
 Carousel.propTypes = {
-  carousel: PropTypes.shape({
-    header: PropTypes.string,
-    span: PropTypes.string,
-    text: PropTypes.string,
-    button: PropTypes.string,
-    linkTo: PropTypes.string,
-    images: PropTypes.arrayOf(PropTypes.string),
-  }),
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      header: PropTypes.string,
+      span: PropTypes.string,
+      subtitle: PropTypes.string,
+      buttonGreen: PropTypes.arrayOf(PropTypes.string),
+      buttonTransparent: PropTypes.arrayOf(PropTypes.string),
+    })
+  ).isRequired,
 };

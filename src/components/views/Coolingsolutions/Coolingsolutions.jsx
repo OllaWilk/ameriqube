@@ -68,51 +68,7 @@ export const Coolingsolutions = ({ coolingSolutions }) => {
           <Carousel carousel={carousel} />
         </div>
       </section>
-      {/* Manuals */}
-      <section className={`${styles.manuals} container`}>
-        <div className={styles.textWrap}>
-          <SectionTitle
-            h2={manualsSection.title}
-            h3={manualsSection.subtitle}
-          />
-        </div>
-      </section>
-      <div className={`${styles.cartContainer} container`}>
-        {renderDownloads(coolingSolutions.manualsSection.downloads)}
-      </div>
-      {/* Certification  */}
-      <section className={styles.certifications}>
-        <div className={`${styles.wrap} container`}>
-          <div className={styles.textWrap}>
-            <SectionTitle
-              h2={certificatesSection.title}
-              h3={certificatesSection.subtitle}
-            />
-            <p>{certificatesSection.description}</p>
-          </div>
-          <div className={styles.certificationsCartWrap}>
-            {/* Buttons */}
-            {allCertificationsKeys.map((serieKey) => (
-              <button
-                key={`${serieKey}-`}
-                className={
-                  selectedCertificate === serieKey
-                    ? styles.active
-                    : styles.toggleBtn
-                }
-                onClick={() => handleCertificateClick(`${serieKey}`)}
-              >
-                {removeUnderlines(serieKey)}
-              </button>
-            ))}
-          </div>
-          <PdfListDisplay
-            data={certificatesSection.downloads}
-            allSeriesKeys={allCertificationsKeys}
-            certificate={selectedCertificate}
-          />
-        </div>
-      </section>
+
       <section></section>
     </>
   );

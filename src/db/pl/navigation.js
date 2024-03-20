@@ -45,11 +45,7 @@ export const productsAndServices = {
       },
     ],
   },
-  "climate control": {
-    abstract:
-      "KONTROLA KLIMATU OBEJMUJE TWORZENIE OPTYMALNYCH WARUNKÓW DLA WRAŻLIWEGO SPRZĘTU POPRZEZ REGULACJĘ TEMPERATURY I WILGOTNOŚCI. NASZE ROZWIĄZANIA OBEJMUJĄ NAJMNIEJSZĄ NA RYNKU JEDNOSTKĘ KLIMATYZACYJNĄ, NAJCIEŃSZĄ JEDNOSTKĘ KLIMATYZACYJNĄ, NAJWYŻSZĄ TEMPERATURĘ PRACY, NAJWIĘKSZY WYBÓR KLIMATYZACJI DO STREF ZAGROŻONYCH I WIELE INNYCH.",
-    linkTo: ["przejdź do strony kontrolę klimatu", "climatecontrol"],
-  },
+
   ENCLOSURES: {
     id: "usa",
     img: photos.iceCube,
@@ -80,7 +76,7 @@ export const footer = {
 
   iso: [
     "ISO 9001:2015 Certificate Number: 017884",
-    "© 2024 SMARTqube",
+    "© 2024 AMERIqube",
     "All Rights Reserved",
   ],
 

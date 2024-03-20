@@ -37,7 +37,7 @@ export const footerNavigation = [
 export const footer = {
   logo: {
     imgUrl: logos.logoAMERIqube,
-    companyName: "SMARTqube",
+    companyName: "",
     street: "ul. Rakietowa 29E",
     zip: "51-311 Wrocław, Poland",
   },

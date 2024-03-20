@@ -7,7 +7,10 @@ import styles from "./TransparentBtn.module.scss";
 
 export const TransparentBtn = ({ text, linkTo }) => {
   return (
-    <Link className={styles.transparent} to={removeSpaces(`/${linkTo}`)}>
+    <Link
+      className={styles.transparent}
+      to={`${linkTo.includes("http") ? linkTo : "/" + removeSpaces(linkTo)}`}
+    >
       <p>{text}</p>
     </Link>
   );

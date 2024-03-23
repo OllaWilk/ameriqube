@@ -1,6 +1,8 @@
 import { photos, logos } from "../../images/index";
 import videoBg from "../../images/videoBg.mp4";
 import videoServices from "../../images/WideoServices.mp4";
+import enclosures from "../../images/enclosures.mp4";
+import ICEqubeProducts from "../../images/ICEqubeProducts.mp4";
 
 export const home = {
   imgBg: photos.splash,
@@ -19,7 +21,7 @@ export const home = {
       buttonTransparentUrl: "about",
     },
     {
-      videoBg: "",
+      videoBg: ICEqubeProducts,
       header:
         "HOCHWERTIGE KLIMAANLAGEN EIGENER PRODUKTION, ENTWICKELT FÜR EFFIZIENTEN BETRIEB AUCH IN INDUSTRIEZONE ZONE1 UND ZONE2",
       logo: logos.logoICEqube,
@@ -30,6 +32,19 @@ export const home = {
       buttonTransparentText:
         "BESUCHEN SIE DIE WEBSITE UND BERECHNEN SIE IHR PROJEKT HEUTE",
       buttonTransparentUrl: "https://www.iceqube.com/technical/calculator/",
+    },
+    {
+      videoBg: enclosures,
+      header:
+        "ICE QUBE BIETET EINE BREITE PALETTE VON INDUSTRIELLEN WAND- UND FREISTEHENDEN GEHÄUSEN SOWIE MODULARE GEHÄUSE MIT DOPPEL- UND EINZELZUGANG FÜR DEN TELEKOMMUNIKATIONS- UND NETZWERKMARKT",
+      logo: logos.logoSMARTqube,
+      subtitle:
+        "Individueller Ansatz zum Projekt, mit der Möglichkeit von Modifikationen und Lösungen",
+      text: "ICEqube",
+      buttonMainText: "Visit ICEqube",
+      buttonMainUrl: "https://www.iceqube.com",
+      // buttonTransparentText: "Check out ",
+      // buttonTransparentUrl: "https://www.smartqube.com/#/integration",
     },
     {
       videoBg: videoServices,
@@ -81,7 +96,7 @@ export const home = {
   },
 
   mission: {
-    src: logos.logoAMERIqubeText,
+    src: logos.logoAMERIqubeTextPng,
     title: "Exzellenz Fördern, Standards Definieren",
     subtitle: "UNSERE MISSION",
     description:

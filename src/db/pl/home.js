@@ -1,6 +1,8 @@
 import { logos, photos } from "../../images";
 import videoBg from "../../images/videoBg.mp4";
 import videoServices from "../../images/WideoServices.mp4";
+import enclosures from "../../images/enclosures.mp4";
+import ICEqubeProducts from "../../images/ICEqubeProducts.mp4";
 
 export const home = {
   imgBg: photos.splash,
@@ -19,7 +21,7 @@ export const home = {
       buttonTransparentUrl: "about",
     },
     {
-      videoBg: "",
+      videoBg: ICEqubeProducts,
       header:
         "WYSOKIEJ JAKOŚCI KLIMATYZATORY NASZEJ PRODUKCJI, PROJEKTOWANE DO EFEKTYWNEJ PRACY NAWET W STREFACH PRZEMYSŁOWYCH ZONE1 I ZONE2",
       logo: logos.logoICEqube,
@@ -29,6 +31,19 @@ export const home = {
       buttonMainUrl: "https://www.iceqube.com",
       buttonTransparentText: "ODWIEDŹ STRONĘ I OBLICZ SWÓJ PROJEKT JUŻ DZIŚ",
       buttonTransparentUrl: "https://www.iceqube.com/technical/calculator/",
+    },
+    {
+      videoBg: enclosures,
+      header:
+        "ICE QUBE OFERUJE SZEROKĄ GAMĘ OBUDÓW. PRZEMYSŁOWYCH OBUDÓW MONTOWANYCH NA ŚCIANIE I WOLNOSTOJĄCYCH. MODUŁOWYCH OBUDÓW Z PODWÓJNYM I POJEDYNCZYM DOSTĘPEM DLA RYNKU TELEKOMUNIKACYJNEGO I SIECIOWEGO.",
+      logo: logos.logoSMARTqube,
+      subtitle:
+        "Indywidualne podejście do projektu, z możliwością modyfikacji i rozwiązań",
+      text: "ICEqube",
+      buttonMainText: "Visit ICEqube",
+      buttonMainUrl: "https://www.iceqube.com",
+      // buttonTransparentText: "Check out ",
+      // buttonTransparentUrl: "https://www.smartqube.com/#/integration",
     },
     {
       videoBg: videoServices,
@@ -77,7 +92,7 @@ export const home = {
   },
 
   mission: {
-    src: logos.logoAMERIqubeText,
+    src: logos.logoAMERIqubeTextPng,
     title: "Wspieranie Doskonałości, Definiowanie Standardów",
     subtitle: "NASZA MISJA",
     description:

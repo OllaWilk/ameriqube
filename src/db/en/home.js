@@ -2,6 +2,7 @@ import { photos, logos } from "../../images/index";
 import videoBg from "../../images/videoBg.mp4";
 import videoServices from "../../images/WideoServices.mp4";
 import ICEqubeProducts from "../../images/ICEqubeProducts.mp4";
+import enclosures from "../../images/enclosures.mp4";
 
 export const home = {
   imgBg: photos.splash,
@@ -31,6 +32,19 @@ export const home = {
       buttonTransparentText:
         "VISIT THE WEBSITE AND CALCULATE YOUR PROJECT TODAY",
       buttonTransparentUrl: "https://www.iceqube.com/technical/calculator/",
+    },
+    {
+      videoBg: enclosures,
+      header:
+        "ICE QUBE OFFERS A WIDE RANGE OF INDUSTRIAL WALL-MOUNTED AND FREE-STANDING ENCLOSURES, AS WELL AS MODULAR ENCLOSURES WITH DUAL AND SINGLE ACCESS FOR THE TELECOMMUNICATIONS AND NETWORK MARKET",
+      logo: logos.logoSMARTqube,
+      subtitle:
+        "Individual approach to the project, with the possibility of modifications and solutions",
+      text: "ICEqube",
+      buttonMainText: "Visit ICEqube",
+      buttonMainUrl: "https://www.iceqube.com",
+      // buttonTransparentText: "Check out ",
+      // buttonTransparentUrl: "https://www.smartqube.com/#/integration",
     },
     {
       videoBg: videoServices,
@@ -66,7 +80,7 @@ export const home = {
       },
       {
         image: logos.logoSMARTqube,
-        title: "WE WILL DESIGN THE FUTUREs",
+        title: "WE WILL DESIGN THE FUTURE",
         description:
           "SMARTqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. Using ICEqube solutions, we design innovative solutions tailored to the changing needs of various industries. Additionally, as a distributor in Europe, SMARTqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape.",
         button: ["Read more", "https://www.smartqube.com"],
@@ -80,7 +94,7 @@ export const home = {
   },
 
   mission: {
-    src: logos.logoAMERIqubeText,
+    src: logos.logoAMERIqubeTextPng,
     title: "Empowering Excellence, Defining Standards",
     subtitle: "OUR MISSION",
     description:

@@ -1,10 +1,11 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Video, MainColorBtn, TransparentBtn } from "../../index";
 import { CarouselHeader } from "../CarouselHeader/CarouselHeader";
 import styles from "./CarouselSlide.module.scss";
 
 export const CarouselSlide = ({ slide, isActive }) => {
   const memoizedSlide = useMemo(() => slide, [slide]);
+  useEffect(() => {}, [memoizedSlide.buttonTransparentText]);
 
   return (
     <div className={`${styles.slide} ${isActive ? styles.active : ""}`}>
@@ -26,10 +27,12 @@ export const CarouselSlide = ({ slide, isActive }) => {
             text={memoizedSlide.buttonMainText}
             linkTo={memoizedSlide.buttonMainUrl}
           />
-          <TransparentBtn
-            text={memoizedSlide.buttonTransparentText}
-            linkTo={memoizedSlide.buttonTransparentUrl}
-          />
+          {memoizedSlide.buttonTransparentText && (
+            <TransparentBtn
+              text={memoizedSlide.buttonTransparentText}
+              linkTo={memoizedSlide.buttonTransparentUrl}
+            />
+          )}
         </div>
       </div>
     </div>

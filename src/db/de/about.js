@@ -9,24 +9,14 @@ export const about = {
     greenBtn: "kontakt",
     greenBtnLinkTo: "contact",
   },
-  companyDescription: [
-    {
-      header: "UNSERE WURZELN",
-      section1:
-        "AMERIqube ist ein polnisches Unternehmen, das eng mit ICEqube in Pennsylvania, USA, verbunden ist. Wir bringen die besten Eigenschaften beider Herkünfte zusammen und kombinieren die Zuverlässigkeit unserer Lösungen mit einem flexiblen und innovativen Ansatz. Unsere Synergie schafft eine einzigartige Basis und garantiert höchste Qualität und Spitzeninnovation in allem, was wir tun.",
-      section2:
-        "Willkommen zu nahtloser Genialität von Präzision und Unternehmertum.",
-      img: logos.logoICEqube,
-    },
-    {
-      header: "UNSERE LEUTE",
-      section1:
-        "Bei AMERIqube trägt jeder von uns jahrelange Erfahrung aus verschiedenen internationalen Organisationen bei, die in einer gemeinsamen Vision und grenzenloser Leidenschaft für Kreativität gipfelt. Unsere kollektive Reise übersteigt die bloße Expertise und umfasst einen Reichtum an Ideen und unerschütterlichem Engagement.",
-      section2:
-        "Unsere Bemühungen und Fachkenntnisse haben Auswirkungen auf verschiedene Bereiche gehabt, einschließlich Kraftwerke im Nahen Osten, Stahlwerke in Osteuropa und Plattformen in der Nordsee. Der Kern unserer gemeinsamen Erfahrung dreht sich um Prozessanalyse und Messungen (Instrumentierung).",
-      img: logos.logoAMERIqube,
-    },
-  ],
+  companyDescription: {
+    title: "ABOUT US",
+    subtitle: "",
+    paragraphOne:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt.",
+    img: logos.logoAMERIqubeTextPng,
+  },
+
   team: {
     slogan: "ENTDECKEN SIE UNSERE MANNSCHAFT",
     title: "UNSERE MENSCHEN SIND UNSER GRÖSSTES KAPITAL",

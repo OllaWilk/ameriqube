@@ -1,4 +1,4 @@
-import { photos, icequbeProducts } from "../../images/index";
+import { photos, icequbeProducts, logos } from "../../images/index";
 
 export const about = {
   imgBg: photos.splash,
@@ -9,15 +9,13 @@ export const about = {
     greenBtn: "kontakt",
     greenBtnLinkTo: "contact",
   },
-  companyDescription: [
-    {
-      header: "NASZE KORZENIE",
-      section1:
-        "AMERIqube to polska firma ściśle związana z ICEqube w Pensylwanii, USA. Łączymy najlepsze atuty obu pochodzeń, łącząc niezawodność naszych rozwiązań z elastycznym i innowacyjnym podejściem. Nasza synergia tworzy unikalną podstawę, zapewniając najwyższą jakość i innowacyjność we wszystkim, co robimy.",
-      section2: "Witamy w świecie precyzji i przedsiębiorczości.",
-      img: photos.iceCube,
-    },
-  ],
+  companyDescription: {
+    title: "O NAS",
+    subtitle: "",
+    paragraphOne:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt.",
+    img: logos.logoAMERIqubeTextPng,
+  },
   team: {
     slogan: "ODKRYJ NASZĄ ZAŁOGĘ",
     title: "NASI LUDZIE TO NASZ NAJWIĘKSZY ATUT",

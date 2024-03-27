@@ -11,6 +11,7 @@
     position: relative;
     min-height: 50svh;
     @include flex(column, center, center);
+    padding: 20px 0;
 
     @include sm-max {
       min-height: 80vh;

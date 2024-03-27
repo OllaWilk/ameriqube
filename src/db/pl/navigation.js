@@ -3,61 +3,26 @@ import { logos, iso, photos } from "../../images";
 export const navigationNavbar = [
   "home",
   "o nas",
-  { rozwiazania: ["integracja", "rozwiazania chłodnicze", "usługi"] },
+  {
+    "produkty & usługi": ["ICEqube", "SMARTqube"],
+  },
   "kontakt",
 ];
 
 export const productsAndServices = {
-  integration: {
+  ICEqube: {
+    // id: "usa",
+    img: logos.logoICEqube,
     abstract:
-      "Integracja obejmuje szeroki zakres działań projektowych, w tym projektowanie inżynierskie, pozyskiwanie, testowanie, pakowanie, wysyłkę i uruchomienie na miejscu, podczas gdy montaż jest tylko częścią tego obszernego procesu. Specjalizujemy się w projektowaniu inżynierskim, systemach mechanicznych i elektrycznych, dystrybucji energii niskonapięciowej, systemach kontrolnych oraz uruchamianiu urządzeń OEM, przestrzegając międzynarodowych norm.",
-    linkTo: ["poznaj naszą integrację", "integration"],
-    subjects: [
-      {
-        name: "Sterowanie silnikiem",
-        btnsList: [
-          "Rozwiązania z regulacją prędkości",
-          "Rozwiązania Soft Start",
-        ],
-      },
-      {
-        name: "Pomiary i analityka",
-        btnsList: [
-          "Rozwiązania CEMS",
-          "Rozwiązania Chroma",
-          "Rozwiązania Spectro",
-        ],
-      },
-      {
-        name: "Energia",
-        btnsList: ["Rozwiązania UPS"],
-      },
-      {
-        name: "Sieć",
-        btnsList: ["Rozwiązania Pasywne", "Rozwiązania Aktywne"],
-      },
-      {
-        name: "Niestandardowe",
-        btnsList: [
-          "Rozwiązania inżynieryjne",
-          "Rozwiązania zbudowane na zamówienie",
-        ],
-      },
-    ],
+      "Ice Qube dostarcza szeroką gamę wysokiej jakości produktów do kontroli klimatu. Oferta obejmuje klimatyzatory dla stref I i II, przemysłowe klimatyzatory oraz specjalistyczne rozwiązania klimatyzacyjne. Klimatyzatory ICEqube charakteryzują się wyjątkową niezawodnością. Spełniają wysokie wymagania przemysłowe i zapewniają precyzyjną kontrolę temperatury i wilgotności w różnych środowiskach pracy",
+    linkTo: ["odwiedź ICEqube ", "https://www.iceqube.com"],
   },
-
-  ENCLOSURES: {
-    id: "usa",
-    img: photos.iceCube,
+  SMARTqube: {
+    // id: "usa",
+    img: logos.logoSMARTqube,
     abstract:
-      "Ice Qube dostarcza szeroką gamę wysokiej jakości produktów do kontroli klimatu. Smart Qube wykorzystuje ich rozwiązania i działa również jako dystrybutor w Europie.",
-    linkTo: ["odwiedź ICEqube", "https://www.iceqube.com"],
-  },
-
-  services: {
-    abstract:
-      "Oferujemy szeroki zakres usług, w tym konserwację sprzętu, kalibrację i rozwiązywanie problemów. Nasz zespół ekspertów zapewnia, że twoje systemy działają z maksymalną wydajnością i zgodnie z normami branżowymi.",
-    linkTo: ["poznaj nasze usługi", "services"],
+      "SMARTqube oferuje kompleksowy zakres usług, od konserwacji sprzętu, kalibracji, po rozwiązywanie problemów. Korzystając z rozwiązań ICEqube, projektujemy innowacyjne rozwiązania dostosowane do zmieniających się potrzeb różnych branż. Dodatkowo, jako dystrybutor w Europie, SMARTqube ułatwia bezproblemowy dostęp do nowoczesnych rozwiązań, umożliwiając firmom rozwój w ciągle zmieniającym się krajobrazie",
+    linkTo: ["odwiedź SMARTqube ", "https://www.smartqube.com"],
   },
 };
 

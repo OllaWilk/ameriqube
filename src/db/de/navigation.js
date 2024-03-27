@@ -3,48 +3,26 @@ import { logos, iso, photos } from "../../images";
 export const navigationNavbar = [
   "Startseite",
   "Über uns",
-  { Lösungen: ["Integration", "Kühlungslösungen", "Dienstleistungen"] },
+  {
+    "Produkte & Dienstleistungen": ["ICEqube", "SMARTqube"],
+  },
   "Kontakt",
 ];
 
 export const productsAndServices = {
-  integration: {
-    abstract:
-      "Integration umfasst eine breite Palette von Projektaktivitäten, einschließlich Engineering, Beschaffung, Testen, Verpacken, Versenden und Inbetriebnahme vor Ort, während die Montage nur ein Teil dieses umfangreichen Prozesses ist. Wir spezialisieren uns auf Ingenieurdesign, mechanische und elektrische Systeme, Niederspannungs-Stromverteilung, Steuerungssysteme und die Inbetriebnahme von OEM-Geräten unter Einhaltung internationaler Standards.",
-    linkTo: ["Integration erkunden", "integration"],
-    subjects: [
-      {
-        name: "Motorsteuerung",
-        btnsList: [
-          "Lösungen für variable Geschwindigkeit",
-          "Soft-Start-Lösungen",
-        ],
-      },
-      {
-        name: "Messung & Analytik",
-        btnsList: ["CEMS-Lösungen", "Chroma-Lösungen", "Spektro-Lösungen"],
-      },
-      {
-        name: "Energie",
-        btnsList: ["UPS-Lösungen"],
-      },
-      {
-        name: "Netzwerk",
-        btnsList: ["Passive Lösungen", "Aktive Lösungen"],
-      },
-      {
-        name: "Individuell",
-        btnsList: ["Ingenieurlösungen", "Lösungen nach Spezifikation"],
-      },
-    ],
-  },
-
   ICEqube: {
-    id: "usa",
-    img: photos.logoAMERIqube,
+    // id: "usa",
+    img: logos.logoICEqube,
     abstract:
-      "Ice Qube liefert eine breite Palette von hochwertigen Produkten zur Klimakontrolle. Smart Qube nutzt ihre Lösungen und fungiert auch als Distributor für Europa.",
-    linkTo: ["ICEqube besuchen", "https://www.iceqube.com"],
+      "Ice Qube bietet eine breite Palette von hochwertigen Produkten für die Klimakontrolle an. Das Angebot umfasst Klimaanlagen für die Zonen I und II, industrielle Klimaanlagen sowie spezialisierte Klimatisierungslösungen. ICEqube-Klimaanlagen zeichnen sich durch außergewöhnliche Zuverlässigkeit aus. Sie erfüllen hohe Industriestandards und gewährleisten präzise Temperatur- und Feuchtigkeitskontrolle in verschiedenen Arbeitsumgebungen.",
+    linkTo: ["BESUCHEN SIE ICEqube", "https://www.iceqube.com"],
+  },
+  SMARTqube: {
+    // id: "usa",
+    img: logos.logoSMARTqube,
+    abstract:
+      "SMARTqube bietet ein umfassendes Angebot an Dienstleistungen, von der Wartung der Ausrüstung, Kalibrierung bis hin zur Fehlerbehebung. Mit den Lösungen von ICEqube entwerfen wir innovative Lösungen, die auf die wechselnden Bedürfnisse verschiedener Branchen zugeschnitten sind. Zusätzlich erleichtert SMARTqube als Distributor in Europa den problemlosen Zugang zu modernen Lösungen und ermöglicht es Unternehmen, sich in einer ständig verändernden Landschaft zu entwickeln",
+    linkTo: ["BESUCHEN SIE SMARTqube", "https://www.smartqube.com"],
   },
 };
 
